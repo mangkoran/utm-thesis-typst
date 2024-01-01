@@ -1,6 +1,35 @@
 #import "@preview/tablex:0.0.7": tablex, rowspanx, colspanx
+// template
+#import "01_cover.typ" as cover
+#import "02_declaration_thesis.typ" as declaration_thesis
+#import "03_declaration_supervisor.typ" as declaration_supervisor
 
 #set heading(numbering: "1.1")
+
+#let data = (
+  title: "UTM Thesis Typst",
+  author: "Afiq Nazrie",
+  degree: "Bachelor of Computer Science",
+  supervisor: (
+    "Dr. Foad",
+  )
+)
+
+#cover.content(
+  title: data.title,
+  author: data.author,
+)
+
+#declaration_thesis.content(
+  title: data.title,
+  author: data.author,
+  supervisor: data.supervisor,
+)
+
+#declaration_supervisor.content(
+  degree: data.degree,
+  supervisor: data.supervisor,
+)
 
 = General Requirements
 

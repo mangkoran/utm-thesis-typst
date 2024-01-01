@@ -1,12 +1,21 @@
-#set align(center)
-#set page(margin: (x: 3.25cm, y: 5cm))
+#let content(
+  title: "THESIS TITLE",
+  author: "THESIS AUTHOR",
+) = [
+  #set align(center)
+  #set page(margin: (x: 3.25cm, y: 5cm))
 
-#upper[UTM THESIS TYPST]
+  #upper[#title]
+  
+  #v(1fr)
+  
+  #upper[#author]
+  
+  #v(1fr)
+  
+  #upper[UNIVERSITI TEKNOLOGI MALAYSIA]
+  
+  #pagebreak(weak: true)
+]
 
-#v(1fr)
-
-#upper[AFIQ NAZRIE]
-
-#v(1fr)
-
-#upper[UNIVERSITI TEKNOLOGI MALAYSIA]
+#content()
