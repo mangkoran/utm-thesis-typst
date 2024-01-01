@@ -12,22 +12,22 @@ You are here because:
 
 ### Pages
 
-- [x] Front Cover
-- [x] Declaration of Thesis/Dissertation/Project Form
-- [ ] Declaration by Supervisor(s)
-- [ ] Declaration of Cooperation
-- [ ] Certification of Examination
-- [ ] Title Page
-- [ ] Author's Declaration of Originality
-- [ ] Acknowledgement
-- [ ] Abstract (English)
-- [ ] Abstract (Malay)
-- [ ] Table of Contents
-- [ ] List of Tables
-- [ ] List of Figures
-- [ ] List of Abbreviations
-- [ ] List of Symbols
-- [ ] List of Appendices
+- [x] 01 Front Cover
+- [x] 02 Declaration of Thesis/Dissertation/Project Form
+- [x] 03 Declaration by Supervisor(s)
+- [x] 04 Declaration of Cooperation
+- [x] 05 Certification of Examination
+- [x] 06 Title Page
+- [x] 07 Author's Declaration of Originality
+- [x] 08 Acknowledgement
+- [ ] 09 Abstract (English)
+- [ ] 10 Abstract (Malay)
+- [ ] 11 Table of Contents
+- [ ] 12 List of Tables
+- [ ] 13 List of Figures
+- [ ] 14 List of Abbreviations
+- [ ] 15 List of Symbols
+- [ ] 16 List of Appendices
 
 ### Formatting
 
@@ -48,3 +48,7 @@ You are here because:
   - [ ] Preliminary and main pages
   - [ ] Chapter start on odd page
   - [ ] Chapter end on even page
+
+## Useful Resources
+
+- [Modules](https://typst.app/docs/reference/scripting/#modules)
