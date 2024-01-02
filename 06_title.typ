@@ -1,24 +1,36 @@
-#set align(center)
+#import "utils.typ": empty
 
-UTM THESIS TYPST \
-UTM THESIS TYPST \
-UTM THESIS TYPST 
+#let content(
+  title: empty[title],
+  author: empty[author],
+  degree: empty[degree],
+  school: empty[school],
+  faculty: empty[faculty],
+) = [
+  #set align(center)
 
-#v(1fr)
+  #upper[#title]
 
-AFIQ NAZRIE
+  #v(1fr)
 
-#v(1fr)
+  #upper[#author]
 
-A thesis submitted in fulfillment of the requirements
-for the award of the degree of Bachelor of Engineering
+  #v(1fr)
 
-#v(1fr)
+  A thesis submitted in fulfillment of the requirements
+  for the award of the degree of #degree
 
-School Name \
-Faculty Name \
-Universiti Teknologi Malaysia
+  #v(1fr)
 
-#v(1fr)
+  #school \
+  #faculty \
+  Universiti Teknologi Malaysia
 
-#upper(datetime.today().display("[month repr:long] [year]"))
+  #v(1fr)
+
+  #upper(datetime.today().display("[month repr:long] [year]"))
+
+  #pagebreak(weak: true)
+]
+
+#content()

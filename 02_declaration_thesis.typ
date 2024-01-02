@@ -1,33 +1,30 @@
 #import "@preview/tablex:0.0.7": tablex, rowspanx, colspanx
+#import "utils.typ": empty
 
 #let content(
-  title: "THESIS TITLE",
-  author: "THESIS AUTHOR",
-  metric: "AUTHOR METRIC",
-  dob: "AUTHOR DOB",
-  session: "ACADEMIC SESSION",
-  utm_email: "AUTHOR UTM EMAIL",
+  title: empty[title],
+  author: empty[author],
+  metric: empty[metric],
+  dob: empty[dob],
+  session: empty[session],
+  utm_email: empty[utm email],
   supervisor: (
-    "SUPERVISOR 1",
-    "SUPERVISOR 2",
+    empty[supervisor 1],
+    empty[supervisor 2],
   )
 ) = [
-  #align(right, 
-    [PSZ 19:16 (Pind. 1/23)]
-  )
+  #align(right)[PSZ 19:16 (Pind. 1/23)]
 
-  #align(
-    center,
-    [
-      #upper[*UNIVERSITI TEKNOLOGI MALAYSIA*] \
-      #upper[*DECLARATION OF THESIS*]
-    ]
-  )
+  #align(center)[
+    #upper[*Universiti Teknologi Malaysia*] \
+    #upper[*Declaration of Thesis*]
+  ]
 
 
   #tablex(
     auto-lines: false,
     columns: (1fr, 2fr, 1fr, 2fr),
+
     [Author's Name], [: #upper[#author]], [Academic Session], [: #session],
     [Matric No.],    [: #metric],         [UTM Email],        [: #utm_email],
     [Date of Birth], colspanx(3)[: #datetime.today().display()], (), (),
@@ -39,6 +36,7 @@
   #tablex(
     auto-lines: false,
     columns: (auto, auto, auto),
+
     [#square[]], [*OPEN ACCESS*], [I agree that my report to be published as a hard copy or made available through online open access.],
     [#square[]], [*RESTRICTED*], [Contains restricted information as specified by the organization/institution where research was done.],
     [#square[]], [*CONFIDENTIAL*], [Contains confidential information as specified in the Official Secret Act 1972.],
@@ -56,6 +54,7 @@
   #tablex(
     auto-lines: false,
     columns: (auto, 1fr, auto, 1fr),
+
     colspanx(4, align: center)[Signature of Student], (), (), (),
     [Signature], colspanx(3)[:], (), (),
     colspanx(4)[], (), (), (),

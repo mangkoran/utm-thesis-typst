@@ -3,8 +3,13 @@
 #import "01_cover.typ" as cover
 #import "02_declaration_thesis.typ" as declaration_thesis
 #import "03_declaration_supervisor.typ" as declaration_supervisor
-
-#set heading(numbering: "1.1")
+#import "04_declaration_cooperation.typ" as declaration_cooperation
+#import "05_certification.typ" as certification
+#import "06_title.typ" as title
+#import "07_declaration_originality.typ" as declaration_originality
+#import "08_acknowledgement.typ" as acknowledgement
+#import "09a_abstract_en.typ" as abstract_en
+#import "09b_abstract_my.typ" as abstract_my
 
 #let data = (
   title: "UTM Thesis Typst",
@@ -16,20 +21,36 @@
 )
 
 #cover.content(
-  title: data.title,
-  author: data.author,
+  // title: data.title,
+  // author: data.author,
 )
 
 #declaration_thesis.content(
-  title: data.title,
-  author: data.author,
-  supervisor: data.supervisor,
+  // title: data.title,
+  // author: data.author,
+  // supervisor: data.supervisor,
 )
 
 #declaration_supervisor.content(
-  degree: data.degree,
-  supervisor: data.supervisor,
+  // degree: data.degree,
+  // supervisor: data.supervisor,
 )
+
+#declaration_cooperation.content()
+
+#certification.content()
+
+#title.content()
+
+#declaration_originality.content()
+
+#acknowledgement.content()
+
+#abstract_en.content()
+
+#abstract_my.content()
+
+#set heading(numbering: "1.1.")
 
 = General Requirements
 

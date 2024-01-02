@@ -1,10 +1,11 @@
 #import "@preview/tablex:0.0.7": tablex, colspanx
+#import "utils.typ": empty
 
 #let content(
-  degree: "DEGREE",
+  degree: empty[degree],
   supervisor: (
-    "SUPERVISOR 1",
-    "SUPERVISOR 2", 
+    empty[supervisor 1],
+    empty[supervisor 2],
   ),
 ) = [
   #set align(center + horizon)
@@ -16,6 +17,7 @@
   #tablex(
     auto-lines: false,
     columns: (auto, 40%),
+
     ..(for i in range(supervisor.len()) {(
       ..(if i != 0 {(
         colspanx(2)[], (),

@@ -1,6 +1,8 @@
+#import "utils.typ": empty
+
 #let content(
-  title: "THESIS TITLE",
-  author: "THESIS AUTHOR",
+  title: empty[title],
+  author: empty[author],
 ) = [
   #set align(center)
   #set page(margin: (x: 3.25cm, y: 5cm))
@@ -13,7 +15,7 @@
   
   #v(1fr)
   
-  #upper[UNIVERSITI TEKNOLOGI MALAYSIA]
+  #upper[Universiti Teknologi Malaysia]
   
   #pagebreak(weak: true)
 ]

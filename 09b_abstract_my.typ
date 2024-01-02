@@ -1,5 +1,15 @@
-#align(center,
-  [= Abstrak]
-)
+#let content() = [
+  #align(center,
+    [= Abstrak]
+  )
 
-#lorem(30)
+  #v(4em)
+  
+  #lorem(30)
+
+  #lorem(30)
+
+  #pagebreak(weak: true)
+]
+
+#content()

@@ -20,8 +20,8 @@ You are here because:
 - [x] 06 Title Page
 - [x] 07 Author's Declaration of Originality
 - [x] 08 Acknowledgement
-- [ ] 09 Abstract (English)
-- [ ] 10 Abstract (Malay)
+- [x] 09 Abstract (English)
+- [x] 10 Abstract (Malay)
 - [ ] 11 Table of Contents
 - [ ] 12 List of Tables
 - [ ] 13 List of Figures
